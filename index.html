@@ -10,21 +10,146 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Gloria+Hallelujah|Questrial');
 
 
+	<!-- Format print-->
+
+	@media print and (max-width: 8.5in){
+
+		#top{
+			margin:0px;
+			background-color:#ff99cc;
+			}
+	
+		#masthead{
+					margin:0px;	
+					background-color: #fff;
+					color:black;
+					width:100%;
+					margin: 0px;
+				}
+		
+		#container-header {
+							height: auto;
+							}
+		
+		img {
+			width:70%;
+		}
+		
+		#portfolio	{
+					float:left;
+					width:45%;
+					margin:0px;		
+					padding:2px;
+					background-color: #fff;
+					color:black;
+					}
+		
+		#resume	{
+				float:right;
+				width:45%;
+				margin:0px;		
+				padding:2px;
+				color:black;
+				background-color: white;
+				}
+		
+
+		.box {
+				padding:3px;
+			}
+	
+	#content-nav {
+					margin: 0 9px;
+				}
+		
+	
+		.sites{
+				background-color: #fff;
+				border-radius:2px;
+				vertical-align: center;
+				padding:1px;
+				margin-top:1px;
+				margin-bottom:1px;
+				border-radius:1px;
+				border:1px solid #silver;
+}
+
+		.logo{ 
+				display:none;
+			}
+
+		div>h1,h2{
+					background-color:white;
+					font-family: 'Gloria Hallelujah', cursive;
+					margin:0px;
+					padding:2px;
+}
+
+		#container-footer{
+						clear:both;
+						padding: 4px 0;
+						background:white;
+						color:black;
+						height: auto;
+						}
+		
+	}
+
+	<!--Format normal-->
+	
+
+body{
+		margin:auto;
+	padding:0px;
+}
+
+#top{
+	margin:0px;
+	background-color:#ff99cc;
+}
 
 #masthead{
 		margin:0px;	
+		padding:10px;
 		background-color: #996666;
 		color:#ffffff;
 		width:100%;
-
 }
+
+<!--format navbar-->
+
+nav{
+		margin:0px;
+		font-family: 'Fira Sans Condensed', sans-serif;
+		background-color: #996666;
+		height: 40px;
+		width: 100%; 
+	}
+
+nav li{
+		display:inline;
+		vertical-align: center;
+		padding:4px;
+		background-color: #666666;
+		}
+
+nav a{
+		text-decoration: none;
+		font-size: 14px;
+		line-height: 14px;
+		background-color: #996666;
+		color:#fff;
+		border:1px solid white;
+	}
+
+	<!--fin navbar format-->
 
 #portfolio{
 		margin:0px;		
 		padding:10px;
 		background-color: #eee;
 		color:#666666;
-
+		width:100%;
 }
 
 #resume{
@@ -32,28 +157,35 @@
 		padding:10px;
 		color:#fff;
 		background-color: #996666;
+		width:100%;
 }
 
-footer{margin-top:0px;
-	background-color: #ff99cc;
-	height: 75px;
-}
-
-img{vertical-align: center;
-	align-content: center;
-	max-width:100%;
+footer{
+		margin:0px;
+		padding:10px;
+		background-color: #ff99cc;
+		height: 75px;
+		width:100%;
 	}
 
+
+img{
+		vertical-align: center;
+		align-content: center;
+		max-width:100%;
+	}
+
+
 .sites{
-	background-color: #666666;
-	border-radius:5px;
-	vertical-align: center;
-	padding:5px;
-	margin-top:15px;
-	margin-bottom:15px;
-	border-radius:5px;
-	border:3px solid #silver;
-}
+		background-color: #666666;
+		border-radius:5px;
+		vertical-align: center;
+		padding:5px;
+		margin-top:15px;
+		margin-bottom:15px;
+		border-radius:5px;
+		border:3px solid #silver;
+		}
 
 div>h1,h2{
 	background-color:#ff99cc;
@@ -62,34 +194,9 @@ div>h1,h2{
 	padding:10px;
 }
 
-nav{
-	font-family: 'Fira Sans Condensed', sans-serif;
-	padding-top:5px
-	padding-bottom:5px;
-	background-color: #666666;
-	height: 40px;
-}
 
-nav li{display:inline;
-		text-decoration: none;
 
-		padding-left:8px;
-			padding-top:5px
-	padding-bottom:5px;
-	vertical-align: center;
-		}
-
-		nav a{text-decoration: none;
-					font-size: 14px;
-		line-height: 20px;
-		background-color: #996666;
-			padding:5px;
-			margin-top:5px;
-			margin-left:0px;
-			color:#fff;
-			border:1px solid white;}
-
-h1,h2,h3,h4,p,ul{
+h1,h2,h3,h4,p,li{
 	font-family: 'Questrial', sans-serif;
 				}	
 
@@ -99,20 +206,24 @@ h1,h2,h3,h4,p,ul{
 }
 
 .logo{
+		background-color:#996666;
 		align-content: center;
-		margin:15px;
+		margin:0px;
+		padding:10px;
 }
 
 </style>
 
 	<body>
+
+	<!--entête-->
 		
 <header id="masthead">
 	<div id="top">
 	<h1>Nathalie Delaunay</h1>
 		<h2>Jump! Take the numeric train...</h2>
 		
-		<p class="logo"><img src="logo.png"></p>
+		<div class="logo"><img src="logo.png"></div>
 		
 				<h2>I'm a webmaster living in the south west of France (Pessac/Bordeaux)! </h2>
 	</div>
@@ -136,7 +247,7 @@ h1,h2,h3,h4,p,ul{
 		<header>
 			<h1>My Portfolio</h1>
 				<p>Seven years ago, I made many internet sites for companies, NGOs and  administrations in Niger.</p>	
-				After six years working in non numeric jobs, I'm back! 
+				<p>After six years working in non numeric jobs, I'm back! </p>
 		</header>
 
 		<!--Site 1-->
@@ -207,8 +318,9 @@ h1,h2,h3,h4,p,ul{
 	</section>
 
 <!--My address-->
+<div id="container-footer">
 	<footer><p>To join me : cel:07 82 40 99 18</p></footer>
-
+</div>
 
 	</body>
 	</html>
