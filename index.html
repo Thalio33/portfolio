@@ -19,7 +19,7 @@
 			
 	<style type="text/css" media="all">
 
-		@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Gloria+Hallelujah|Questrial');
+	@import url('https://fonts.googleapis.com/css?family=Amiko|Candal|Capriola|Cookie|Itim|Libre+Franklin|Oleo+Script+Swash+Caps|Prompt');
 
 	
 		
@@ -27,8 +27,10 @@
 	<!--Format mobile device-->
 	
 html, body{
-	margin:0px
-	padding:0px;
+	margin:0em;
+	padding:0em;
+	font-family: 'Libre Franklin', sans-serif;
+	background-color: transparent;
 }
 
 *, *:before,*:after{
@@ -37,37 +39,90 @@ html, body{
 }
 
 
-
-#top{
-	margin:0px;
-	padding:0px;
-	background-color:#ff99cc;
-
+html{
+		font-size: 100%;
+	    line-height: 1;
+	    -moz-text-size-adjust: 100%;
+	    -ms-text-size-adjust: 100%;
+	    -webkit-text-size-adjust: 100%;
 	}
 
+
+	h2{
+	font-size: 1.625em; /*26px/16px=1.5em*/
+	line-height: 1.15em;/*18.4px/16px=1.15em*/
+
+}
+
+h3{
+	font-size: 1.345em;/*21,52px/16px=1.345em*/
+	line-height: 1.350em;/*21.06/16=1.350em*/
+}
+
+h4{
+	font-size: 1.20em;/*19.2/16px=1.20em*/
+	line-height: 1.3em;
+}
+
+p{
+	font-size: 1.125em;/*18/16=1.125em*/
+	line-height: 1.75em;/*28/16=1.75em*/
+}
+
+div h2:hover{
+				transform:rotate(2deg);
+}
+
+#top h1:hover{
+
+				transform:translate(20px);
+}
+
+
+h1,h2,h3,h4,p,li{
+				margin:0em;
+				padding:0.3125em 0.3125em 0.3125em 0.3125em;
+				}	
+
+/*----------------------------------------------------------------*/
+/*header codes*/
+#top{
+	margin:0em;
+	padding:0em;
+	background-image: url(light.PNG);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-color:#cfb095;
+	color:#303030;
+	height: auto;
+	width:100%;
+	}
+
+#top h2{
+	background-color: transparent;
+}
+
 #content-header{
+
 	height: auto;
 	width: 100%;
 
 }
 
 #masthead{
-		margin:0px;
-		padding:0px;
+	
+		margin:0em;
+		padding:0em;
 		color:#ffffff;
 		width:100%;
 
 }
 
-#masthead h1{
-			font-size:40px;
-			line-height: 108px;
-			text-shadow: 2px 1px 3px rgba(150, 150, 150, 1);
-			background-image: url("flowers.png"), url("flowers2.png");
-			background-position: left center,right center;
-			background-repeat: no-repeat,no-repeat;
+#masthead h1{font-family: 'Capriola', sans-serif;
+			font-size:2.22em; /*40px/18px= 2.22em */
+			line-height: 3em;/*2.61*1.15=3em*/
+			text-shadow: 0.125em 0.0625em 0.1875em rgba(150, 150, 150, 1);/*2/16=0.125em  1/16=0.0625em  3/16=0.1875em*/
 						}
-
 
 
 
@@ -80,137 +135,157 @@ html, body{
 
 nav{	
 		background-color: #333333;
-		margin:0px;
-		font-family: 'Fira Sans Condensed', sans-serif;
-		height: 40px;
+		margin:0em;
+		font-family: 'Amiko', sans-serif;
+		height: 2em;/* 32px/16px=2em*/
 		width: 100%;
-		padding:10px; 
+		padding:0.625em 0.3125em 0.625em 0.3125em; /*10/16=0.625  5/16=0.3125*/
 	}
 
 nav li{
 		display:inline;
 		vertical-align: center;
-		padding:4px;
+		padding:0.1875em;/*3/16=0.1875em*/
 				}
+
+
 
 nav a{
 		text-decoration: none;
-		font-size: 14px;
-		line-height: 14px;
+		font-size: 0.830em; /*13.28px/16px=0.830em  */
+		line-height: 0.875em;/*14/16=0.875em*/
 		background-color: #996666;
 		color:white;
-		border:1px solid #333333;
-		padding:5px;
-		border-radius: 5px;
-		margin:3px;
+		border:0.0625em solid #333333;/*1/16=0.0625em*/
+		padding:0.125em;/*4/16=0.25em*/
+		border-radius: 0.3125em;/*5/16=0.3125em*/
+		margin:0.125em;/*2/16=0.125em*/
 	}
 
-	nav ul{overflow:hidden;
-		margin:0px;
-		padding:10px;
+	nav ul{
+		overflow:hidden;
+		margin:0em;
+		padding:0.625em;/*10/16=0.625em*/
 	}
+
+	nav li:hover{
+				transform:rotate(5deg);
+}
+
+nav a:hover{
+			background-color: #cccccc;
+			color:black;
+			transform:rotate(5deg);
+
+				}
 
 	<!--fin navbar -->
 
+/*----------------------------------------------------------------*/
 
-#portfolio{
-		margin:0px;		
-		padding:0px;
-		background-color: #eee;
-		color:#996666;
-		width:100%;
-		height: auto;
-			}
+/* Articles element*/
 
+.box{
+	margin:0em;
+	padding:0.3125em;/*5/16=0.3125em*/
+	}
 
 header{
 			background-color: #996666;
-			padding:0px;
+			padding:0em;
 			color:white;
 
 					}
 
-
-#resume{
-		margin:0px;		
-		padding:0px;
+#portfolio{
+		margin:0em;		
+		padding:0em;
+		background-color: #333333;
 		color:#fff;
-		background-color: #ff99cc;
-		width: 100%;
-		height: 100%;
-		}
-
- #job{
-		margin:0px;		
-		padding:0px;
-		color:#996666;
-		height: auto;
-		width: auto;
-}
-
-footer{
-		margin:0px;
-		padding:0px;
-		color:white;
-		background-image: url("flowers.png"), url("flowers2.png");
-		background-position: left center,right center;
-		background-repeat: no-repeat,no-repeat;
-		background-color: #996666;
-		height: 100px;
 		width:100%;
-		}
+		height: auto;
+			}
+
+#portfolio article {
+						margin:0.9573em 0.125em 0.9573em 0.125em;*/15/16=0.9573em  2/16=0.125em*/
+						padding:0.3125 0em 0.3125em 0.25em;/*5/16=0.3125em 4/16=0.25em*/
+						border :0.1875em solid white;/* 3/16=0.1875em*/
+						background-color: #cccccc;
+						border-radius:0.3125em;
+						
+						}
 
 
 img{
-		margin:0px;
-		padding:5px;
+		margin:0em;
+		padding:0.3125em;
 		vertical-align: center;
 		align-content: center;
 		max-width:100%;
 	}
 
+#portfolio div>h1,h2{
+				background-color:#cfb095;
+				font-family: 'Prompt', sans-serif;
+				border-radius:0.3125em;
+				}
+
+
+#resume{
+		margin:0em;		
+		padding:0em;
+		color:#fff;
+		background-color: #cfb095;
+		width: 100%;
+		height: 100%;
+		}
 
 #resume h2{
 				background-color:#996666;
-				font-family: 'Gloria Hallelujah', cursive;
-				border-radius:5px;
-					}
-#portfolio div>h1,h2{
-				background-color:#ff99cc;
-				font-family: 'Gloria Hallelujah', cursive;
-				border-radius:5px;
-					}
+				font-family: 'Itim', cursive;
+				border-radius:0.3125em;
+			}
 
+#resume li{
+	list-style: none;
+}
 
-h1,h2,h3,h4,p,li{
-				margin:0px;
-				padding:10px;
-				font-family: 'Questrial', sans-serif;
-				}	
-
-
-.box{
-	margin:0px;
-	padding:5px;
+ #job{
+		margin:0em;		
+		padding:0em;
+		color:#996666;
+		height: auto;
+		width: auto;
 	}
 
 
+/*----------------------------------------------------------------*/
 
-	#portfolio article {
-						margin:15px 2px 15px 2px;
-						padding:5px 0px 5px 4px;
-						border :3px solid #333333;
-						background-color: #996666;
-						border-radius:5px;
-						
-						}
+/*footer principal page*/
+	
+footer{
+		margin:0em;
+		padding:0em;
+		color:black;
+		text-align: center;
+		background-image: url("flowers.png");
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		background-color: #996666;
+		height: 6.25em;
+		width:100%;
+		text-shadow: 0.125em 0.0625em 0.1875em rgba(150, 150, 150, 1);
+		}
 
+/*----------------------------------------------------------------*/
+
+/*Elements for desktop display >720px*/
 
 	@media screen and (min-width: 720px){
 
 html, body,#masthead{
-	margin:0px
-	padding:0px;
+	margin:0em
+	padding:0em;
 }
 
 *, *:before,*:after{
@@ -235,141 +310,168 @@ html, body,#masthead{
 }
 
 
-
-
-	#content-header{
-	width: 100%;
-	height: auto;
+#content-header{
+				width: 100%;
+				height: auto;
 }
-	#portfolio article,
-	#resume article{
-					float:left;
-					width: 30.5%;
-					margin-left:auto;
-					}
 
-    img{
+#top{	background-image: url(flowers2.png),url(light.PNG);
+	background-repeat: no-repeat,no-repeat;
+	background-position: right bottom,left bottom;}
+
+#portfolio article,
+#resume article{
+				float:left;
+				width: 30.5%;
+				margin-left:auto;
+				}
+
+.box{
+	margin:0.1875em;/*3/16=0.1875em*/
+	padding:0.125em;/*2/16=0.125em*/
+	}
+
+
+ img{
 		vertical-align: center;
 		align-content: center;
 		max-width:100%;
 	}
 
-}
 
 #portfolio{
-	margin: 0px;
-	padding: 0px;
-	background-color: #996666;
+	margin: 0em;
+	padding: 0em;
+	background-color: #333333;
 	width: 100%;
 }
 
 #portfolio article{
-	margin:5px;
-	padding:6px;
+	margin:0.3125em;/*5/16=0.3125em*/
+	padding:0.375em;/*6/16=0.375em*/
 }
 
 #resume{
-		margin: 0px;
-		padding: 0px;
+		margin: 0em;
+		padding: 0em;
 		width: 100%;
 			}
-
-.box{
-	margin:3px;
-	padding:2px;}
 }
 
 
+/*----------------------------------------------------------------*/
 
+/*Elements for printing */
 
 
 
 	@media print and (max-width: 8.5in){
 
-											
-											#masthead {
-														color:black;
-														background-color: white;
-														}
+body{
+	background-color: transparent;
+}
 
-											#content-header{
-															height: auto;
-															}
+header{
+	background-color: transparent;
+	color:black;
+}	
+
+#masthead {
+			color:black;
+			background-color: transparent;
+			}
+
+#content-header{
+				height: auto;
+				background-color: transparent;
+				}
 		
-										
-											#portfolio{
-														float:left;
-														width:54%;
-														}
+.box{
+	padding:2px;/*2/16=0.125em*/
+	}
 		
-											#resume{
-														float:right;
-														width:36%;
-														border:5px dotted silver;
-														border-radius:5px;
-														background-color: white;
-														color:black;
+nav{
+	display:none; 
+	}
 
-													}
-											img{
-												width:1.75in;
-												}
+#portfolio{
+			float:left;
+			width:54%;
+			background-color: transparent;
+			}
 		
+#resume{
+		float:right;
+		width:36%;
+		border:0.3125em dotted silver;/*5/16=0.3125em*/
+		border-radius:0.3125em;
+		background-color: transparent;
+		color:black;
+		}
 
-											.logo{ 
-													display:none;
-												}
+#resume h2{
+			background-color:black;
+			color:white;
+			font-family: 'Itim', cursive;
+			border-radius:0.3125em;
+			}
 
-												#top{
-													background-color: white;
-													color:black;
-												}
+#resume li{
+			list-style: none;
 
-												#job{
-														background-color: white;
-														border-radius:5px;
-														vertical-align: center;
-														padding:2px;
-														margin-top:1px;
-														margin-bottom:1px;
-																										}
+			}
 
-												#portfolio article {
-																	margin:3px 2px 3px 2px;
-																	padding:4px 0px 4px 3px;
-																	border :2px solid silver;
-																	background-color: white;
-																	border-radius:5px;
-																	height:auto;
-																	}
+img{
+	width:1.75in;
+	}
 
-												div>h1,h2{
-															background-color:silver;
-															font-size: 85%;
-															font-family: 'Gloria Hallelujah', cursive;
-															margin:0px;
-															padding:2px;
-															}
+#top{
+	background-image: none;
+	background-color: transparent;
+	color:black;
+	}
+
+#job{
+	background-color: transparent;
+	border-radius:0.3125em;
+	vertical-align: center;
+	padding:0.125em;/*2/16=0.125em*/
+	margin-top:0.0625em;/*1/16=0.0625em*/
+	margin-bottom:0.0625em;
+	}
+
+#portfolio article {
+					margin:0.1875em 0.125em 0.1875em 0.125em;/*3/16=0.1875em  2/16=0.125em*/
+					padding:0.25em 0em 0.25em 0.1875em;/*4/16=0.25em*/
+					border :0.125em solid silver;
+					background-color: transparent;
+					border-radius:0.3125em;/*5/16=0.3125em*/
+					height:auto;
+					}
+
+div>h1,h2{
+			background-color:transparent;
+			font-size: 85%;
+			font-family: 'Gloria Hallelujah', cursive;
+			margin:0em;
+			padding:0.125em;
+			}
 
 
 
-											footer{
-													background-color: silver;
-													color:black;
-												}
+footer{
+		border:0.3125em dotted silver;
+		border-radius:0.3125em;
+		background-color: transparent;
+		color:black;
+		}
 
-											#container-footer	{
-																clear:both;
-																}
+#container-footer	{
+					clear:both;
+					}
 
-												.box{
-													padding:2px;
-												}
-		
-											nav{
-													display:none; 
-												}
-							}
+
+					}
 
 </style>
 
@@ -383,8 +485,7 @@ html, body,#masthead{
 	<div id="top">
 	<h1>Nathalie Delaunay</h1>
 		<h2>Jump! Take the numeric train...</h2>
-		
-		<h2>I'm a webmaster living in the south west of France (Pessac/Bordeaux)! </h2>
+		<h3>Hye! I'm a webmaster living in the south west of France (Pessac)! </h3>
 	</div>
 
 
@@ -407,21 +508,22 @@ html, body,#masthead{
 	<section id="portfolio" class="group">
 		<header>
 			<h1>My Portfolio</h1>
-				<p>Seven years ago, I made many internet sites for companies, NGOs and  administrations in Niger.</p>	
-				<p>After six years working in non numeric jobs, I'm back! </p>
+				<p>Seven years ago, I made many internet sites for companies, NGOs and  administrations in Niger, where I lived for ten years. I didn't have any particular formation. I learned by myself, with the extraordinary help of the web!</p>	
+				<p>2010, I returned in France after security problems in this fantastic country. As my profil didn't interest french companies, I've gone back to university to follow control managment formation. After six years working in non numeric jobs, I'm back! </p>
+				<p></p>
 		</header>
 
 <div id="job" class="group">
 		<!--Site 1-->
 
 	<article>
-		<h2>MEBA site (Niger)</h2>
+		<h2>MEBA site</h2>
 			<figure><img src="meba.PNG"></figure>
 	</article>
 
 		<!--Site 2-->
 	<article>
-		<h2>BIA (Niger)</h2>
+		<h2>BIA</h2>
 			<figure><img src="bianiger.png"></figure>
 	</article>
 
@@ -433,7 +535,7 @@ html, body,#masthead{
 
 		<!--Site 4-->
 	<article>
-		<h2>Groupe Sahélien d'ingienerie (Niger)</h2>
+		<h2>G.S.I</h2>
 			<figure><img src="gsiniger.PNG"></figure>
 	</article>
 
@@ -441,13 +543,13 @@ html, body,#masthead{
 		<!--Site 5-->
 
 	<article>
-		<h2>Nigeravia (Niger)</h2>
+		<h2>Nigeravia</h2>
 			<figure><img src="nigeravia.PNG"></figure>
 	</article>
 
 		<!--Site 6-->
 	<article>
-		<h2>Fonds de Solidarite (Niger)</h2>
+		<h2>Fonds de Solidarite</h2>
 			<figure><img src="solaf.PNG"></figure>
 	</article>
 
@@ -461,16 +563,16 @@ html, body,#masthead{
 <article>
 		<div class="box">
 			<h2>Currently</h2>
-				<h3>Designer/Developper</h3>
+				<h3>Webmaster</h3>
 					<h4>Self-employed</h4>
-						<p>Franck Deco : my first contract as webmaster</p>
+						<p>Nothing yet!</p>
 		</div>
 </article>
 
 <article>
 		<div class="box">
 			<h2>Old realisation</h2>
-				<h3>Designer/Developper</h3>
+				<h3>Webmaster</h3>
 					<h4>Employed in GSI Niger 2004-2008</h4>
 		</div>
 </article>
@@ -490,7 +592,7 @@ html, body,#masthead{
 
 <!--My address-->
 <div id="container-footer">
-	<footer><p>To join me : cel:07 82 40 99 18</p></footer>
+	<footer><p><p><p>Contact :07 82 40 99 18</p></p></p></footer>
 </div>
 
 	</body>
