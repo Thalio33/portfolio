@@ -5,8 +5,9 @@
 		<!-- Viewport meta tag to prevent iPhone from scaling our page -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		
-		<link rel="stylesheet" href="./css/style.css"/>
+		<link rel="stylesheet" href="style.css"/>
 
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 <!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
 <script src=".js/respond.min.js"></script>
 		
@@ -19,470 +20,24 @@
 			
 	<style type="text/css" media="all">
 
-@import url('https://fonts.googleapis.com/css?family=Amiko|Dosis');
+	p,#resume li{
+		font-size: 1.063em; /* 17px / 16 = 1.063em */
+		line-height: 1.223; /* 1.3 / 1.063 = 1.223 */
+		margin: .612em 0;
+			}
+			
+	/* Fluid Columns, Fixed Gutters */
 
-	
-		
-
-	<!--Format mobile device-->
-	
-html, body{
-	margin:0em;
-	padding:0em;
-	font-family: 'Dosis', sans-serif;
-	background-color: transparent;
-}
-
-*, *:before,*:after{
-	margin:inherit;
-	padding: inherit;
-}
-
-
-html{
-		font-size: 100%;
-	    line-height: 1;
-	    -moz-text-size-adjust: 100%;
-	    -ms-text-size-adjust: 100%;
-	    -webkit-text-size-adjust: 100%;
-	}
-
-h1{
-		font-size:3.19em;  /*3*1.0625=3.19em*/
-		line-height: 1.223;/*20/16=1.25em*/
-	}
-
-	h2{
-	font-size: 2.125em; /*2*1.0625=2.125em*/
-	line-height: 1.223;/*20/16=1.25em*/
-
-}
-
-h3{
-	font-size: 1.38em;/*1.063x1.3=1.38*/
-	line-height: 1.18;/*(1.3+0.325)/1.38=1.18*/
-}
-
-h4 {
-    font-size: 1em;
-    line-height: 1.56;
-    text-transform: uppercase;
-}
-
-p{
-	font-size: 1.0625em;/*17/16=1.0625em*/
-	line-height: 1.223;/*1.3/1.063=1.223*/
-}
-
-div h2:hover{
-				transform:rotate(2deg);
-}
-
-#top h1:hover{
-
-				transform:translate(20px);
-}
-
-
-h1,h2,h3,h4,p,li{
-				font-weight: 100%;
-				margin:0em;
-				padding:0.3125em 0.3125em 0.3125em 0.3125em;
-				}	
-
-/*----------------------------------------------------------------*/
-/*header codes*/
-#top{
-	margin:0em;
-	padding:0em;
-	background-color:#cfb095;
-	color:#303030;
-	height: auto;
-	width:100%;
-	}
-
-#top h2{
-	background-color: transparent;
-}
-
-#content-header{
-
-	height: auto;
-	width: 100%;
-
+.wrapper {
+    padding: 0 .65em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #masthead{
-	
-		margin:0em;
-		padding:0em;
-		color:#ffffff;
-		width:100%;
-
+	width: 80%;
 }
-
-#masthead h1{
-
-			text-shadow: 0.125em 0.0625em 0.1875em rgba(150, 150, 150, 1);/*2/16=0.125em  1/16=0.0625em  3/16=0.1875em*/
-						}
-
-
-
-
-<!--navbar-->
-
-#content-nav{
-	background-color: #333333;
-}
-
-nav{	
-		background-color: #333333;
-		margin:0em;
-		font-family: 'Amiko', sans-serif;
-		height: 2em;/* 32px/16px=2em*/
-		padding:0.625em 0em 0.625em 0; /*10/16=0.625  5/16=0.3125*/
-		width: 100%;
-	}
-
-nav li{
-		display:inline;
-		vertical-align: center;
-		padding:0.1875em;/*3/16=0.1875em*/
-				}
-
-
-
-nav a{
-		text-decoration: none;
-		font-size: 0.830em; /*13.28px/16px=0.830em  */
-		line-height: 0.875em;/*14/16=0.875em*/
-		background-color: #996666;
-		color:white;
-		border:0.0625em solid #333333;/*1/16=0.0625em*/
-		padding:0.2em;/*4/16=0.25em*/
-		border-radius: 0.3125em;/*5/16=0.3125em*/
-		margin:0.125em;/*2/16=0.125em*/
-	}
-
-	nav ul{
-		overflow:hidden;
-		margin:0em;
-		padding:0.625em 0em 0.625em 0.625em;/*10/16=0.625em*/
-	}
-
-	nav li:hover{
-				transform:rotate(5deg);
-}
-
-nav a:hover{
-			background-color: #cccccc;
-			color:black;
-			transform:rotate(5deg);
-
-				}
-
-	<!--fin navbar -->
-
-/*----------------------------------------------------------------*/
-
-/* Articles element*/
-
-#content article{
-	padding-bottom: 1.3em;
-	padding-top:1.3em;
-	align-content: center;
-}
-
-.box{
-	margin:0em;
-	padding:0.3125em;/*5/16=0.3125em*/
-	}
-
-header{
-			background-color: #996666;
-			padding:0;
-			color:white;
-			padding:1em 1.9em 1em 1.9em;
-			border-bottom:0.1em solid #333333;
-
-
-					}
-
-#portfolio{
-		margin:0em;		
-		padding:0em;
-		background-color: white;
-		color:#fff;
-		width:100%;
-		height: auto;
-			}
-
-#portfolio article {
-						margin:0.9573em 0.125em 0.9573em 0.125em;*/15/16=0.9573em  2/16=0.125em*/
-						padding:0.3125 0em 0.3125em 0.25em;/*5/16=0.3125em 4/16=0.25em*/
-						border :0.1875em solid white;/* 3/16=0.1875em*/
-						background-color: white;
-						border:0.150em solid #996666;
-						border-radius:0.3125em;
-						
-						}
-
-
-img{
-		margin:0em;
-		padding:0.3125em;
-		vertical-align: center;
-		align-content: center;
-		max-width:100%;
-	}
-
-#portfolio div>h1,h2{
-				background-color:transparent;
-				border-radius:0.3125em;
-				}
-
-#portfolio h2{
-	border-bottom:0.1em solid #996666;
-}
-
-
-#resume{
-		margin:0em;		
-		padding:0em;
-		color:#fff;
-		background-color: #333333;
-		width: 100%;
-		height: 100%;
-		}
-
-#resume h2{
-				background-color:#996666;
-				border-radius:0.3125em;
-			}
-
-#resume li{
-	list-style: none;
-}
-
- #job{
-		margin:0em;		
-		padding:0em;
-		color:#996666;
-		height: auto;
-		width: auto;
-	}
-
-
-/*----------------------------------------------------------------*/
-
-/*footer principal page*/
-	
-footer{
-		margin:0em;
-		padding:0em;
-		color:black;
-		text-align: center;
-		background-image: url("flowers.png");
-		background-position: left bottom;
-		background-repeat: no-repeat;
-		background-color: #996666;
-		height: 6.25em;
-		width:100%;
-		text-shadow: 0.125em 0.0625em 0.1875em rgba(150, 150, 150, 1);
-		}
-
-/*----------------------------------------------------------------*/
-
-/*Elements for desktop display >720px*/
-
-	@media screen and (min-width: 720px){
-
-html, body,#masthead{
-	margin:0em
-	padding:0em;
-}
-
-*, *:before,*:after{
-	margin:inherit;
-	padding: inherit;
-}
-
-	/* Float Clearing http://nicolasgallagher.com/micro-clearfix-hack */
-
-.group:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-    clear: both;
-}
-
-.group {
-    *zoom: 1; /* 3 */
-    }
-
-.end{
-	clear:both;
-}
-
-
-#content-header{
-				width: 100%;
-				height: auto;
-}
-
-#top{	background-image: url(flowers2.png),url(light.PNG);
-	background-repeat: no-repeat,no-repeat;
-	background-position: right bottom,left bottom;}
-
-#portfolio article,
-#resume article{
-				float:left;
-				width: 30.5%;
-				margin-left:auto;
-				}
-
-.box{
-	margin:0.1875em;/*3/16=0.1875em*/
-	padding:0.125em;/*2/16=0.125em*/
-	}
-
-
- img{
-		vertical-align: center;
-		align-content: center;
-		max-width:100%;
-	}
-
-#portfolio{
-	margin: 0em;
-	padding: 0em;
-	background-color: white;
-	width: 100%;
-}
-
-#portfolio article{
-	margin:0.3125em;/*5/16=0.3125em*/
-	padding:0.375em;/*6/16=0.375em*/
-}
-
-#resume{
-		margin: 0em;
-		padding: 0em;
-		width: 100%;
-			}
-}
-
-
-/*----------------------------------------------------------------*/
-
-/*Elements for printing */
-
-
-
-	@media print and (max-width: 8.5in){
-
-body{
-	background-color: transparent;
-}
-
-header{
-	background-color: transparent;
-	color:black;
-}	
-
-#masthead {
-			color:black;
-			background-color: transparent;
-			}
-
-#content-header{
-				height: auto;
-				background-color: transparent;
-				}
-		
-.box{
-	padding:2px;/*2/16=0.125em*/
-	}
-		
-nav{
-	display:none; 
-	}
-
-#portfolio{
-			float:left;
-			width:54%;
-			background-color: transparent;
-			}
-		
-#resume{
-		float:right;
-		width:36%;
-		border:0.3125em dotted silver;/*5/16=0.3125em*/
-		border-radius:0.3125em;
-		background-color: transparent;
-		color:black;
-		}
-
-#resume h2{
-			background-color:black;
-			color:white;
-			border-radius:0.3125em;
-			}
-
-#resume li{
-			list-style: none;
-
-			}
-
-img{
-	width:1.75in;
-	}
-
-#top{
-	background-image: none;
-	background-color: transparent;
-	color:black;
-	}
-
-#job{
-	background-color: transparent;
-	border-radius:0.3125em;
-	vertical-align: center;
-	padding:0.125em;/*2/16=0.125em*/
-	margin-top:0.0625em;/*1/16=0.0625em*/
-	margin-bottom:0.0625em;
-	}
-
-#portfolio article {
-					margin:0.1875em 0.125em 0.1875em 0.125em;/*3/16=0.1875em  2/16=0.125em*/
-					padding:0.25em 0em 0.25em 0.1875em;/*4/16=0.25em*/
-					border :0.125em solid silver;
-					background-color: transparent;
-					border-radius:0.3125em;/*5/16=0.3125em*/
-					height:auto;
-					}
-
-div>h1,h2{
-			background-color:transparent;
-			font-size: 85%;
-			margin:0em;
-			padding:0.125em;
-			}
-
-
-
-footer{
-		border:0.3125em dotted silver;
-		border-radius:0.3125em;
-		background-color: transparent;
-		color:black;
-		}
-
-#container-footer	{
-					clear:both;
-					}
-
-
-					}
 
 </style>
 
@@ -491,19 +46,12 @@ footer{
 	<body>
 
 	<!--entête-->
-	<div id="content-header">	
-<header id="masthead">
-	<div id="top">
-	<h1>Hi! I"m Nathalie Delaunay</h1>
+	<div id="container-nav">
+			<section id="nav" class="wrapper">
 
-			<h2>A student "webmaster" living in the south west of France near Bordeaux! </h2>
-	</div>
-
-
-	</header>
-</div>
-<!--Menu-->
-	<div id="content-nav">
+				<h3>Nathalie Delaunay</h3>
+			<!--Menu-->	
+						<!-- Turn off for now
 			<nav>
 					<ul>
 						<a href=""><li>Portfolio</li></a>
@@ -512,85 +60,105 @@ footer{
 						<a href=""><li>Contact</li></a>
 					</ul>
 				</nav>	
-	</div>
+				-->
+						</section>
+							</div>
 
+	<div id="container-header">	
+<header id="masthead" class="wrapper">
+	<h1>Hi! I"m Nathalie </h1>
+
+			<h2>A student "webmaster" living in the south west of France near Bordeaux! </h2>
+	</header>
+</div>
+
+
+
+
+
+	
+<div id="container-content">
 <article id="content">
+
 <!--My portfolio-->
-	<section id="portfolio" class="group">
-		<header>
-			<h1>My Portfolio</h1>
+	<section id="portfolio" class="group wrapper">
+
+		<header class="wrapper">
+
+			<h3>My Portfolio</h3>
 				<p>Seven years ago, I made many internet sites for companies, NGOs and  administrations in Niger, where I lived for ten years. I didn't have any particular formation. I learned by myself, with the extraordinary help of the web!</p>	
 				<p>2010, I returned in France after security problems in this fantastic country. As my profil didn't interest french companies, I've gone back to university to follow control managment formation. After six years working in non numeric jobs, I'm back! </p>
-				<p></p>
-		</header>
+			</header>
 
-<div id="job" class="group">
 		<!--Site 1-->
 
-	<article>
-		<h2>MEBA site</h2>
+	<article class="group wrapper">
+		<h4>MEBA site</h4>
 			<figure><img src="meba.PNG"></figure>
 	</article>
 
 		<!--Site 2-->
-	<article>
-		<h2>BIA</h2>
+	<article class="group wrapper">
+		<h4>BIA</h4>
 			<figure><img src="bianiger.png"></figure>
 	</article>
 
 		<!--Site 3-->
-	<article>
-		<h2>Biosécurité Niger</h2>
+	<article class="group wrapper">
+		<h4>Biosécurité Niger</h4>
 			<figure><img src="biosecurity.PNG"></figure>
 	</article>
 
 		<!--Site 4-->
-	<article>
-		<h2>G.S.I</h2>
+	<article class="group wrapper">
+		<h4>G.S.I</h4>
 			<figure><img src="gsiniger.PNG"></figure>
 	</article>
 
 	
 		<!--Site 5-->
 
-	<article>
-		<h2>Nigeravia</h2>
+	<article class="group wrapper">
+		<h4>Nigeravia</h4>
 			<figure><img src="nigeravia.PNG"></figure>
 	</article>
 
 		<!--Site 6-->
-	<article>
-		<h2>Fonds de Solidarite</h2>
+	<article class="group wrapper">
+		<h4>Fonds de Solidarite</h4>
 			<figure><img src="solaf.PNG"></figure>
 	</article>
 
-</div>
 	</section>
 
 
 <!--My resume-->
-	<section id="resume" class="group">
-		<h1>My resume</h1>	
-<article>
+	<section id="resume" class="group wrapper">
+		<header class="wrapper">
+				<h3>My Resume</h3>
+					<p>Current/previous positions and skill set</p>
+		</header>	
+
+<article class="wrapper">
 		<div class="box">
-			<h2>Currently</h2>
-				<h3>Webmaster</h3>
-					<h4>Self-employed</h4>
+			<h4>Currently</h4>
+				<h5>Webmaster</h5>
+					<h6>Self-employed</h6>
 						<p>Nothing yet!</p>
 		</div>
 </article>
 
-<article>
+<article class="wrapper">
 		<div class="box">
-			<h2>Old realisation</h2>
-				<h3>Webmaster</h3>
-					<h4>Employed in GSI Niger 2004-2008</h4>
+			<h4>Old realisation</h4>
+				<h5>Webmaster</h5>
+					<h6>Employed in GSI Niger 2004-2008</h6>
 		</div>
 </article>
 
-<article>
+<article class="wrapper">
 		<div class="box">
-		<h2>Skills</h2>
+		<h4>Skills</h4>
 				<ul>
 					<li>Photoshop and Illustrator</li>
 					<li>HTML5 &amp CSS3</li>
@@ -599,11 +167,37 @@ footer{
 				</ul>
 		</div>
 </article>
+
+		<footer class="wrapper">
+			<p>For a full work history, have a look at my LinkedIn Profile</p>
+		</footer>
 	</section>
 </article>
+</div>
 <!--My address-->
 <div id="container-footer">
-	<footer><p><p><p>Contact :07 82 40 99 18</p></p></p></footer>
+			<footer id="colophon" class="wrapper">
+	<h3>Stay in touch!</h3>	
+
+	<form id="myform" class="cssform" action="">
+
+	<p><label for="user">Nom :</label>
+	<input type="text" id="user" value="" /></p>
+
+	<p><label for="emailaddress">Email :</label>
+	<input type="text" id="emailaddress" value="" /></p>
+
+	<p><label for="comments">Message :</label>
+	<textarea id="comments" rows="5" cols="25"></textarea></p>
+
+	<p><div id="bouton">
+		<input type="submit" value="Envoyer" />
+		<input type="reset" value="Reset" />
+	</div></p>
+</form>
+
+	<p id="copyright">©2013 all rights reserved.</p>
+	</footer>
 </div>
 
 	</body>
