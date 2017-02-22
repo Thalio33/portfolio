@@ -145,6 +145,7 @@ table {
 ****************************************** */
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 
+
 html {
    font-size: 100%;
    line-height: 1;
@@ -375,7 +376,7 @@ section footer {
 		padding-bottom: 2em;
 		}
 
-/*form*/
+
 
 #container-footer h3{
 					margin-top:1em;
@@ -383,47 +384,6 @@ section footer {
 					padding-left: 1em;
 					padding-bottom: 1em;
 }
-
-
-.cssform p{
-width: 300px;
-clear: left;
-margin: 0;
-padding: 5px 0 8px 0;
-padding-left: 100px; /*width of left column containing the label elements*/
-height: 1%;
-}
-
-.cssform label{
-font-weight: bold;
-float: left;
-margin-left: -120px; /*width of left column*/
-width: 150px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
-}
-
-.cssform input[type=&quot;text&quot;]{ /*width of text boxes. IE6 does not understand this attribute*/
-width: 180px;
-
-}
-
-.cssform textarea{
-width: 210px;
-height: 150px;
-}
-
-div #bouton{
-	margin-left:150px;
-}
-/*.threepxfix class below:
-Targets IE6- ONLY. Adds 3 pixel indent for multi-line form contents.
-to account for 3 pixel bug: http://www.positioniseverything.net/explorer/threepxtest.html
-*/
-
-* html .threepxfix{
-margin-left: 3px;
-} 
-
-/*fin contact form*/
 
 
 
@@ -453,10 +413,70 @@ Fine-tuning our 3 column layout on the larger width screens
     }
 
 
+form,fieldset,legend {
+	border:0,
+	padding:0;
+	margin:0;
+}
+
+legend, label {      
+				font-weight: 300;
+				text-transform: uppercase;
+				color: #fff;
+				font-size: 1em;
+				line-height: 1.3;
+				font-weight: 500;
+    			padding: .65em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+	
+	legend{
+			font-size: 1.382em; 
+			line-height: 1.223;
+		}
+
+	label {
+    display: block;
+	font-size: 1em;
+	line-height: 1.56;
+    padding: 0 0 .325em;
+	}
+	
+
+	form ol{
+		list-style: none;
+	    padding: 1.3em 0 0;
+    }
+	
+
+	input, textarea{
+		width:100%;
+	}
+
+	form li{
+		display:block;
+		float:left;
+    	padding: 0 0 .65em;
+    	margin-right: auto;
+    	width: 100%;
+    	    }
+
+    form li:last-child{
+    	margin-right: 0;
+    					}
+
+.send{
+	clear:both;
+	background-color: #666666;
+	border-radius: 6px;
+	}
+
 
 /*Elements for desktop display >45 em ou 720px*/
 
-	@media screen and (min-width: 45em) {
+	@media screen and (min-width: 45em)  {
 
 	    body {
 	        font-size: 107.692307692308%;
@@ -480,16 +500,45 @@ Fine-tuning our 3 column layout on the larger width screens
 			background-position: right top;
 		}
 
-
 #nav,
 #masthead,
 #content,
 #colophon {
 	margin: 0 5.5%;
 }
+    
+	.name, .email,.subject,.message {
+		float:left;
+    padding-right: 1.3em;
+    padding-left: 0;
+	width:48%;
+		    }
 
-		
-	}
+.email textarea{
+	width: auto;
+				}
+				
+ .message textarea {
+   						 width: 100%;
+    					clear:both;
+
+   					 }
+
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+	
+
 
 
 /*----------------------------------------------------------------*/
