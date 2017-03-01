@@ -7,7 +7,10 @@
 		
 		<link rel="stylesheet" href="style.css"/>
 
-		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Muli:200,400,700|Raleway:200,400,600|Titillium+Web:300,400,700');
+</style>
+
 		<!-- Normalize hide address bar for iOS and Android -->
 		<script src="hideaddressbar.js"></script>
 		
@@ -26,126 +29,90 @@
 
 			
 	<style type="text/css" media="all">
-
-
-
-/**
- * 1. Remove default vertical scrollbar in IE 6/7/8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-
-textarea {
-    padding-bottom: 10%;
-    overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
-    }
-
-.send {
-    display: inline-block;
-    max-width: 30em;
-    font-size: 1em;
-    line-height: 1;
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
-    background: #996666;
-    margin: .65em .26em;
-    padding: .975em;
-    border: 0;
-    border-radius: 1.3em;
-    text-shadow: 0 -1px 1px rgba(0, 0, 0, .65);
-    }
-    
-.send:hover {
-    background: #333333;
-    }
-    
-.send:active,
-.send:focus {
-    background: #555;
-    }
-
-
-    /********************************************
-	Fluid Media
-	********************************************/
-
-	figure {
-	    position: relative;
-	}
-
-	figure img,
-	figure object,
-	figure embed,
-	figure video {
-	    display: block;
-	    max-width: 100%; 
-	}
-
-	img {
-	    border: 0;
-	    -ms-interpolation-mode: bicubic;
-	}
-
-	/* 
-	interpolation-mode
-	http://css-tricks.com/ie-fix-bicubic-scaling-for-images/
-	 */
-	
-	
-/* Creates hover effect on Portfolio images */
-	#portfolio figure:hover,
-	.box:hover {
-	    -moz-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
-	    -webkit-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
-	    box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
-	}
-
-	/* Image Offset for Indication of Linked Content */
-
-	#portfolio figure:hover {
-	    bottom: .26em;
-	}
-					
-	@media screen and (min-width: 45em) {
-										#container-header {
-															background: #352a38 url("bg-photo-l.jpg") no-repeat top center;
-															padding:10% 0;
-			-webkit-background-size: cover;
-			    -moz-background-size: cover;
-			    background-size: cover;
-															}
-										}	
-
-@media screen and (max-width: 45em) {
-		#container-header {
-		    background: #352a38 url("bg-photo-s.jpg") no-repeat top center;
-			-webkit-background-size: cover;
-		    -moz-background-size: cover;
-		    background-size: cover;
-			padding: 10% 0;
-		}
-	}
-
-	ADD INLINE IMAGE OF MAYA AND STYLE
----------------------------
-/* Headshot */
-
-#nathalie {
-    width: 25%;
+#nav {
+    padding: .65em 0;
+}
+#nav h3 {
+    float: left;
+    text-transform: capitalize; 
+}
+#nav ul {
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    margin: .65em 0 .39em;
+}
+#nav li {
+   border-top: 1px solid #eee;
+}
+#nav a {
+   display: block;
+   font-size: 1.063em;
+   color: #333;
+   text-decoration: none;
+   padding: .975em 1.3em; 
+}
+#nav a:hover {
+   background: #f8f8f8;
+}
+#nav nav {
     height: 0;
-    padding-bottom: 25%;
+    overflow: hidden;
+}
+
+body { 
+    -webkit-animation: bugfix infinite 1s; 
+}
+
+@-webkit-keyframes bugfix {
+    from {padding: 0;} 
+    to {padding: 0;} 
+}
+#nav input[type=checkbox] {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
+#nav label { 
+    display: block;
+    background: url("icon-menu.png") no-repeat right center;
+    text-indent: -999em;
+    cursor: pointer;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}
+#nav input[type=checkbox]:checked ~ nav {
+    height: auto;
+    overflow: hidden;  
+}
+@media screen and (min-width: 50em) {
+ #nav {
+        padding: 0;}
+ #nav h3 {
+         margin: .39em 1.3em 0 0;
     }
-    
-#nathalie img {
-    max-width: 100%;
+    #nav label {
+        display: none;
+    }
+     #nav nav {
+        height: auto;
+        overflow: visible;
+    }
+    #nav ul {
+        border: 0;
+        margin: 0;
+        }
+        #nav li {
+        display: inline;
+        border: 0;
+    }
+    #nav a {
+        display: inline-block;
+        }
     }
 
-    #nathalie{
-    	background-color: transparent;
-    	    }
-
-	
 </style>
 
 </head>
@@ -158,13 +125,17 @@ textarea {
 
 				<h3>Nathalie Delaunay</h3>
 			<!--Menu-->	
+       <!-- Checkbox Hack markup -->
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" onclick>Menu</label>
+        <!-- /Checkbox Hack markup -->
 						
 			<nav>
 					<ul>
-						<a href=""><li>Portfolio</li></a>
-						<a href=""><li>Resume</li></a>
-						<a href=""><li>LinkedIn Profile</li></a>
-						<a href=""><li>Contact</li></a>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="./">LinkedIn Profile</a></li> <!-- No destination yet -->
+                <li><a href="#contact-form">Contact</a></li>
 					</ul>
 				</nav>	
 				
