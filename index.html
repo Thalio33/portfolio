@@ -1,34 +1,89 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<!-- Viewport meta tag to prevent iPhone from scaling our page -->
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		
-		<link rel="stylesheet" href="style.css"/>
+		<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if !IE]><html><![endif]-->
 
-	<style>
-@import url('https://fonts.googleapis.com/css?family=Muli:200,400,700|Raleway:200,400,600|Titillium+Web:300,400,700');
-</style>
-
-		<!-- Normalize hide address bar for iOS and Android -->
-		<script src="hideaddressbar.js"></script>
-		
-		<!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
-		<script src="respond.min.js"></script>
-
-	<!-- Using picturefill to load conditional images and matchmedia to provide support for IE8 and below + older browsers -->
-		<script src="picturefill.js"></script>
-		<script src="matchmedia.js"></script>
-
-		
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-			
+<!--[if lt IE 9]>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<![endif]-->
+
+<!--[if IE 8]>
+<script src="./js/checkbox.js"></script>
+<![endif]-->
+
+<!--[if IE 6]>
+<script src="./js/selectivizr-min.js"></script>
+<![endif]-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+	<!-- Viewport meta tag to prevent iPhone from scaling our page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		<link rel="stylesheet" href="style.css"/>
+		
+		<!-- Normalize hide address bar for iOS and Android -->
+		<script src="./js/hideaddressbar.js"></script>
+		
+		<!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
+		<script src="./js/respond.min.js"></script>
+		
+		<!-- Using picturefill to load conditional images and matchmedia to provide support for IE8 and below + older browsers -->
+		<script src="js/picturefill.js"></script>
+		<script src="js/matchmedia.js"></script>
+		
 
 			
 	<style type="text/css" media="all">
+
+	.ie #portfolio figure {
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+/* "*" hack applies only to IE7 and below */
+
+.ie #portfolio figure {
+    *width: auto;
+    }
+   
+/* Navigation */
+
+/* IE8 .checked class for checkbox.js */
+
+#nav input[type=checkbox].checked ~ nav {
+    height: auto;
+    overflow: visible;  
+}
+
+/* Always show nav, IE7 and below */
+
+.ie #nav nav {
+    *height: auto;
+    *overflow: visible;  
+}
+
+/* Hide navicon, IE7 and below */
+
+.ie #nav label { 
+    *background: none;
+    }
+     
+/* box-sizing polyfill, IE7 and below (The URL in .ie textarea is placeholder only. You will need to replace with path to your domain) */
+
+.ie .wrapper,
+.ie .name,
+.ie .email,
+.ie input,
+.ie textarea {
+    *behavior: url("http://www.absolute-path.com/js/boxsizing.htc");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli:200,400,700|Raleway:200,400,600|Titillium+Web:300,400,700');
+
+
 #nav {
     padding: .65em 0;
 }
@@ -39,16 +94,16 @@
 #nav ul {
     list-style: none;
     padding: 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #83022;
     margin: .65em 0 .39em;
 }
 #nav li {
-   border-top: 1px solid #eee;
+   border-top: 1px solid #83022;
 }
 #nav a {
    display: block;
    font-size: 1.063em;
-   color: #333;
+   color: #830022;
    text-decoration: none;
    padding: .975em .975em; }
    
@@ -59,11 +114,9 @@
     height: 0;
     overflow: hidden;
 }
-
 body { 
     -webkit-animation: bugfix infinite 1s; 
 }
-
 @-webkit-keyframes bugfix {
     from {padding: 0;} 
     to {padding: 0;} 
@@ -112,6 +165,13 @@ body {
         display: inline-block;
         }
     }
+</style>	
+</head>
+
+			
+
+			
+
 
 </style>
 
@@ -266,10 +326,10 @@ body {
 </article>
 </div>
 <!--My address-->
-<div id="container-footer">
+<div id="container-footer" class="wrapper">
 
-<form id="contact-form" action="/action-page.php" method="post">
-<fieldset class="wrapper">
+<form id="contact-form" action="/action-page.php" method="post" class="wrapper">
+<fieldset class="group wrapper">
 	<legend>Send me a message</legend>
 	<ol class="group">
 		<li class="name"><label for ="contact-name">Name</label>

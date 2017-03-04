@@ -233,13 +233,17 @@ h6 {
 	font-weight: 200;
 		}
 
-h3:hover{
-				transform:rotate(2deg);
-}
+h3:hover{-ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate(2deg);
+    -ms-transform:transform:scale(1.1,1.1);
+    -webkit-transform:transform:scale(1.1,1.1);
+    transform:scale(1.1,1.1);
+				}
 
 
 
-#nav,#masthead,#content,#colophon {
+#nav,#masthead,#content,#colophon,#form-contact {
 			margin: 0 18px;
 		}
 
@@ -322,7 +326,7 @@ p,#resume li{
 		}
 
 #portfolio figure,#resume .box{
-	background-color: #996666;
+	background-color: #994f5e;
 -webkit-box-shadow: 3px 3px 3px 0px rgba(138,136,138,0.44);
 -moz-box-shadow: 3px 3px 3px 0px rgba(138,136,138,0.44);
 box-shadow: 3px 3px 3px 0px rgba(138,136,138,0.44);
@@ -353,7 +357,7 @@ section footer {
 		background-image: url("flowers.png");
 		background-position: left bottom;
 		background-repeat: no-repeat;
-		background-color: #333333;
+		background-color: #830022;
 		height: auto;
 		text-shadow: 0.125em 0.0625em 0.1875em rgba(150, 150, 150, 1);
 		font-weight:100;
@@ -383,6 +387,8 @@ section footer {
  * 2. Improve readability and alignment in all browsers.
  */
 
+form{padding: 24px 0;}
+
 textarea {
     padding-bottom: 10%;
     overflow: auto; /* 1 */
@@ -397,7 +403,7 @@ textarea {
     font-weight: 500;
     color: #fff;
     text-decoration: none;
-    background: #996666;
+    background: #bda19e;
     margin: .65em .26em;
     padding: .975em;
     border: 0;
@@ -463,8 +469,8 @@ textarea {
 			-webkit-background-size: cover;
 			    -moz-background-size: cover;
 			    background-size: cover;
-								}
-
+						}
+	
 nav{	
 		background-color: transparent;
 		margin:0em;
@@ -505,6 +511,11 @@ nav a:hover{
 		    -moz-background-size: cover;
 		    background-size: cover;
 			padding: 10% 0;
+		}
+
+
+		#portfolio figure{
+			max-width: 25em;
 		}
 	}
 
@@ -615,7 +626,7 @@ legend, label {
 	}
 
 
-/*Elements for desktop display >45 em ou 720px*/
+/*Elements for desktop display >40em ou 640px*/
 
 	@media screen and (min-width: 40em)  {
 
@@ -660,6 +671,22 @@ legend, label {
     					clear:both;
 
    					 }
+   #container-footer fieldset{
+					margin-top:1em;
+					padding-top:2em;
+					padding-left: 1em;
+					padding-bottom: 1em;
+
+}
+.ie .message textarea {
+    *width: 49.9%;
+    }
+
+.ie .send {
+    *margin-left: 46.7%;
+    }
+
+}
 
 }
 
@@ -829,4 +856,6 @@ footer{
 
 
 					}
+
+
 
