@@ -566,7 +566,7 @@ Fine-tuning our 3 column layout on the larger width screens
 
 
 form,fieldset,legend {
-	border:0,
+	border:0;
 	padding:0;
 	margin:0;
 }
